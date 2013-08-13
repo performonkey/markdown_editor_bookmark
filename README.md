@@ -1,11 +1,12 @@
 markdown_editor_bookmark
 ========================
 
-Markdown编辑器书签
+#Markdown编辑器书签
 
+###代码：
     data:text/html,
     <style type="text/css">
-        .e{
+        #e{
             position:absolute;
             top:0;
             right:50%;
@@ -13,7 +14,7 @@ Markdown编辑器书签
             left:0;
         } 
      
-        .c{
+        #c{
             position:absolute;
             overflow:auto;
             top:0;
@@ -23,8 +24,8 @@ Markdown编辑器书签
         }
     </style>
      
-    <div class="e" id="editor"></div>
-    <div class="c"></div>
+    <div id="e"></div>
+    <div id="c"></div>
      
     <script src="http://d1n0x3qji82z53.cloudfront.net/src-min-noconflict/ace.js" 
             type="text/javascript" 
@@ -36,11 +37,11 @@ Markdown编辑器书签
             consoleEl.innerHTML=e
         }
         
-        var e=ace.edit("editor");
+        var e=ace.edit("e");
         e.setTheme("ace/theme/monokai");
         e.getSession().setMode("ace/mode/markdown");
-        document.getElementById('editor').style.fontSize='14px';
-        var consoleEl = document.getElementsByClassName("c")[0];
+        document.getElementById('e').style.fontSize='14px';
+        var consoleEl = document.getElementById("c");
         var converter = new Showdown.converter;
         
         e.on("change",function(){
@@ -50,3 +51,6 @@ Markdown编辑器书签
             }
         });
     </script>
+
+###使用方法：
+将「bookmark」文件内容保存与书签中即可。
