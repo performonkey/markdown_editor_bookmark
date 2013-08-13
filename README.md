@@ -1,7 +1,5 @@
-markdown_editor_bookmark
+Markdown编辑器书签
 ========================
-
-#Markdown编辑器书签
 
 ###代码：
     data:text/html,
