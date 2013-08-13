@@ -5,20 +5,20 @@ Markdown编辑器书签
     data:text/html,
     <style type="text/css">
         #e{
-            position:absolute;
-            top:0;
-            right:50%;
-            bottom:0;
-            left:0;
+            position: absolute;
+            top: 0;
+            right: 50%;
+            bottom: 0;
+            left: 0;
         } 
      
         #c{
-            position:absolute;
-            overflow:auto;
-            top:0;
-            right:0;
-            bottom:0;
-            left:50%;
+            position: absolute;
+            overflow: auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 50%;
         }
     </style>
      
@@ -32,7 +32,7 @@ Markdown编辑器书签
      
     <script> 
         function showResult(e){
-            consoleEl.innerHTML=e
+            consoleEl.innerHTML = e
         }
         
         var e = ace.edit("e");
@@ -43,7 +43,7 @@ Markdown编辑器书签
         var converter = new Showdown.converter;
         
         e.on("change",function(){
-            var n=e.getSession().getMode().$id;
+            var n = e.getSession().getMode().$id;
             if(n == "ace/mode/markdown"){
                 showResult(converter.makeHtml(e.getValue()))
             }
