@@ -35,7 +35,7 @@ Markdown编辑器书签
             consoleEl.innerHTML=e
         }
         
-        var e=ace.edit("e");
+        var e = ace.edit("e");
         e.setTheme("ace/theme/monokai");
         e.getSession().setMode("ace/mode/markdown");
         document.getElementById('e').style.fontSize='14px';
